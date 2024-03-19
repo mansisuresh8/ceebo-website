@@ -8,17 +8,17 @@ import { FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="flex flex-col justify-start items-center gap-8 bg-orange-200 px-4 py-8 w-full">
-      <section className="flex justify-between items-center gap-8 w-full">
+      <section className="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
         <div className="w-1/2">
-          <section className="flex justify-center items-center">
-            <div className="w-96">
+          <section className="flex flex-col md:flex-row justify-center items-center">
+            <div className="w-28 md:w-96">
               <img
                 src="./assets/logo.png"
                 alt=""
                 className="rounded-full object-contain w-full"
               />
             </div>
-            <div className="px-4">
+            <div className="md:text-lg text-sm md:mx-4 mx-0 ">
               <p className="font-semibold">
                 Have questions, feedback, or just want to say hello?
               </p>
@@ -39,7 +39,7 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="w-full px-4 size-10"
+                  className="w-40 md:w-full px-4 size-10"
                 />
                 <button className="bg-orange-600 text-white rounded-full border border-orange-6 px-4 py-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300font-bold text-xl">
                   Subsribe
@@ -79,18 +79,19 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className="flex justify-between items-center border-t-2 border-black w-full py-8">
+      <section className="flex flex-col md:flex-row justify-between items-center border-t-2 border-black w-full py-8">
         <div className="flex flex-row justify-between items-center gap-4">
           <p className="underline">Privacy Policy</p>
           <p className="underline">Terms of Service</p>
           <p className="underline">Cookies Settings</p>
         </div>
-        <div>
+        <div className="py-4">
           <p>© 2023 Relume. All rights reserved.</p>
         </div>
       </section>
     </footer>
-  );
+  );  
 };
 
 export default Footer;
+ 
