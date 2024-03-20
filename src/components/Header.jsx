@@ -5,7 +5,7 @@ import { IoMenu } from "react-icons/io5";
 
 function Header() {
   return (
-   <div className="flex justify-between items-center py-4 bg-orange-200 text-black w-full px-4 md:px-20 cursor-pointer">
+   <div className="flex justify-between items-center py-4 bg-orange-100 text-black w-full px-4 md:px-20 cursor-pointer">
     <section className="flex justify-start items-center gap-4">
         <div className="w-10 md:w-16"> 
             <img src="./assets/logo.png" alt="" className="rounded-full object-contain w-full"/>

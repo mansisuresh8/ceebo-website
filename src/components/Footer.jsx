@@ -11,15 +11,15 @@ const Footer = () => {
       <section className="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
         <div className="w-1/2">
           <section className="flex flex-col md:flex-row justify-center items-center">
-            <div className="w-28 md:w-96">
+            <div className="w-28 md:w-60">
               <img
                 src="./assets/logo.png"
                 alt=""
                 className="rounded-full object-contain w-full"
               />
             </div>
-            <div className="md:text-lg text-sm md:mx-4 mx-0 ">
-              <p className="font-semibold">
+            <div className="md:text-lg text-sm mx-4 w-full">
+              <p className="font-bold">
                 Have questions, feedback, or just want to say hello?
               </p>
               <p>
@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <p>
                 By subscribing you agree to with our{" "}
-                <a href="" className="underline">
+                <a href="" className="underline font-semibold">
                   Privacy Policy
                 </a>
               </p>
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row justify-between items-center border-t-2 border-black w-full py-8">
+      <section className="flex flex-col md:flex-row justify-between items-center border-t-2 border-black w-full px-8 py-8">
         <div className="flex flex-row justify-between items-center gap-4">
           <p className="underline">Privacy Policy</p>
           <p className="underline">Terms of Service</p>
