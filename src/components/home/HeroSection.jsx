@@ -1,9 +1,7 @@
 import React from "react";
 
-function Home() {
+const HeroSection = () => {
   return (
-    // Hero Section
-
     <div>
       <section className="flex justify-between items-center py-20 px-28 Gilroy-Medium ">
         <div className="">
@@ -32,8 +30,6 @@ function Home() {
         </section>
       </section>
 
-      {/* grid function */}
-
       <section className=" w-full flex justify-center items-center">
         <div className="flex justify-between items-center w-5/6 bg-white rounded-3xl">
           <div className="w-40 px-4 py-4">
@@ -56,6 +52,6 @@ function Home() {
       </section>
     </div>
   );
-}
+};
 
-export default Home;
+export default HeroSection;
