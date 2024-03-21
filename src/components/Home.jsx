@@ -5,7 +5,7 @@ function Home() {
     // Hero Section
 
     <div>
-      <section className="flex justify-between items-center bg-white py-20 px-28 Gilroy-Medium ">
+      <section className="flex justify-between items-center py-20 px-28 Gilroy-Medium ">
         <div className="">
           <p className="text-5xl font-bold ">
             <span className="text-green-400 italic font-semibold">Fresh</span>{" "}
@@ -25,8 +25,33 @@ function Home() {
             <button className="font-bold text-xl ">Order Now</button>
           </div>
         </div>
-        <div className="">
+        <section className="bg-orange-200 rounded-3xl px-28 py-28">
+          <div className="">
+            <img src="/public/images/salad-bowl.png" alt="" className="" />
+          </div>
+        </section>
+      </section>
 
+      {/* grid function */}
+
+      <section className=" w-full flex justify-center items-center">
+        <div className="flex justify-between items-center w-5/6 bg-white rounded-3xl">
+          <div className="w-40 px-4 py-4">
+            <img src="/public/images/frame-1.png" alt="" />
+            <p>Freshly Prepared Food</p>
+          </div>
+          <div className="w-40 px-4 py-4">
+            <img src="/public/images/frame-2.png" alt="" />
+            <p>Dedicated to Taste</p>
+          </div>
+          <div className="w-40 px-4 py-4">
+            <img src="/public/images/frame-3.png" alt="" />
+            <p>Quality Ingredient Only</p>
+          </div>
+          <div className="w-40 px-4 py-4">
+            <img src="/public/images/frame-4.png" alt="" />
+            <p>Sweeten Wisely</p>
+          </div>
         </div>
       </section>
     </div>
