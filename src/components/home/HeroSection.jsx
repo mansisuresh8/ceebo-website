@@ -30,9 +30,9 @@ const HeroSection = () => {
         </section>
       </section>
 
-<section>
-<BottomHeroSection />
-</section>
+      <section>
+        <BottomHeroSection />
+      </section>
     </div>
   );
 };
@@ -50,24 +50,38 @@ export default HeroSection;
 const BottomHeroSection = () => {
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex justify-between items-center w-5/6 bg-white rounded-3xl px-16 py-4">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-center items-center flex-col gap-4"
-          >
-            <div className="w-32">
-              <img
-                src={item.imageUrl}
-                alt={item.description}
-                className="object-contain w-full"
-              />
+      <div className="flex justify-center items-center gap-4  w-5/6 bg-white shadow-lg rounded-3xl py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className={`flex justify-center items-center w-full `}
+            >
+              <div className="flex justify-center items-center flex-col gap-4">
+                <div className="w-32">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.description}
+                    className="object-contain w-full"
+                  />
+                </div>
+                <div className="flex justify-center items-center w-3/4">
+                  <p className="text-center font-medium">{item.description}</p>
+                </div>
+              </div>
+              {/* Conditionally render the line image only if it's not the last item */}
+              {/* {index !== data.length - 1 && (
+              <div className="w-1">
+                <img
+                  src={"/images/hero-line.png"}
+                  alt={""}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            )} */}
             </div>
-            <div className="flex justify-center items-center w-3/4">
-              <p className="text-center font-medium">{item.description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -75,19 +89,19 @@ const BottomHeroSection = () => {
 
 const data = [
   {
-    imageUrl: "/public/images/frame-1.png",
+    imageUrl: "/images/frame-1.png",
     description: "Freshly Prepared Food",
   },
   {
-    imageUrl: "/public/images/frame-2.png",
+    imageUrl: "/images/frame-2.png",
     description: "Dedicated to Taste",
   },
   {
-    imageUrl: "/public/images/frame-3.png",
+    imageUrl: "/images/frame-3.png",
     description: "Quality Ingredient Only",
   },
   {
-    imageUrl: "/public/images/frame-4.png",
+    imageUrl: "/images/frame-4.png",
     description: "Sweeten Wisely",
   },
 ];
