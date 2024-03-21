@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div>
+    <div className="space-y-10">
       <section className="flex justify-between items-center py-20 px-28 Gilroy-Medium ">
         <div className="">
           <p className="text-5xl font-bold ">
@@ -30,28 +30,64 @@ const HeroSection = () => {
         </section>
       </section>
 
-      <section className=" w-full flex justify-center items-center">
-        <div className="flex justify-between items-center w-5/6 bg-white rounded-3xl">
-          <div className="w-40 px-4 py-4">
-            <img src="/public/images/frame-1.png" alt="" />
-            <p>Freshly Prepared Food</p>
-          </div>
-          <div className="w-40 px-4 py-4">
-            <img src="/public/images/frame-2.png" alt="" />
-            <p>Dedicated to Taste</p>
-          </div>
-          <div className="w-40 px-4 py-4">
-            <img src="/public/images/frame-3.png" alt="" />
-            <p>Quality Ingredient Only</p>
-          </div>
-          <div className="w-40 px-4 py-4">
-            <img src="/public/images/frame-4.png" alt="" />
-            <p>Sweeten Wisely</p>
-          </div>
-        </div>
-      </section>
+<section>
+<BottomHeroSection />
+</section>
     </div>
   );
 };
 
 export default HeroSection;
+
+// Normal fuction
+
+// function BottomHeroSection() {
+
+// }
+
+// arrow Function
+
+const BottomHeroSection = () => {
+  return (
+    <div className="w-full flex justify-center items-center">
+      <div className="flex justify-between items-center w-5/6 bg-white rounded-3xl px-16 py-4">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex justify-center items-center flex-col gap-4"
+          >
+            <div className="w-32">
+              <img
+                src={item.imageUrl}
+                alt={item.description}
+                className="object-contain w-full"
+              />
+            </div>
+            <div className="flex justify-center items-center w-3/4">
+              <p className="text-center font-medium">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const data = [
+  {
+    imageUrl: "/public/images/frame-1.png",
+    description: "Freshly Prepared Food",
+  },
+  {
+    imageUrl: "/public/images/frame-2.png",
+    description: "Dedicated to Taste",
+  },
+  {
+    imageUrl: "/public/images/frame-3.png",
+    description: "Quality Ingredient Only",
+  },
+  {
+    imageUrl: "/public/images/frame-4.png",
+    description: "Sweeten Wisely",
+  },
+];
