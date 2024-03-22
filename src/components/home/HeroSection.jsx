@@ -52,9 +52,9 @@ const BottomHeroSection = () => {
     <div className="w-full flex justify-center items-center">
       <div className="flex justify-center items-center gap-4  w-5/6 bg-white shadow-lg rounded-3xl py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full">
-          {data.map((item, index) => (
+          {data.map((item) => (
             <div
-              key={index}
+              key={item.id}
               className={`flex justify-center items-center w-full `}
             >
               <div className="flex justify-center items-center flex-col gap-4">
@@ -89,19 +89,25 @@ const BottomHeroSection = () => {
 
 const data = [
   {
+    id:1,
     imageUrl: "/images/frame-1.png",
     description: "Freshly Prepared Food",
   },
   {
+    id:2,
     imageUrl: "/images/frame-2.png",
     description: "Dedicated to Taste",
   },
   {
+    id:3,
     imageUrl: "/images/frame-3.png",
     description: "Quality Ingredient Only",
   },
   {
+    id:4,
     imageUrl: "/images/frame-4.png",
     description: "Sweeten Wisely",
   },
 ];
+
+
