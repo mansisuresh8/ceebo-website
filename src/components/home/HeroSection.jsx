@@ -23,9 +23,24 @@ const HeroSection = () => {
             <button className="font-bold text-xl ">Order Now</button>
           </div>
         </div>
-        <section className="bg-orange-200 rounded-3xl px-28 py-28">
-          <div className="">
-            <img src="/public/images/salad-bowl.png" alt="" className="" />
+        <section className="bg-orange-200 w-1/2 rounded-3xl px-28 py-28">
+          <div className="flex justify-between items-center bg-white border rounded-xl px-8 py-8 ">
+            <div className="bg-orange-200 rounded-full w-20 px-4 py-4">
+              <div className="">
+                <img src="./images/heroSection-frame.png" alt="" />
+              </div>
+            </div>
+            <div className="font-semibold">
+              <p className="text-orange-500 text-xl ">150+</p>
+              <p>Trusted Customers</p>
+            </div>
+          </div>
+          <div className="w-full">
+            <img src="/public/images/salad-bowl.png" alt="" />
+          </div>
+          <div>
+            <p>50+</p>
+            <p>Curated Meals</p>
           </div>
         </section>
       </section>
@@ -89,25 +104,23 @@ const BottomHeroSection = () => {
 
 const data = [
   {
-    id:1,
+    id: 1,
     imageUrl: "/images/frame-1.png",
     description: "Freshly Prepared Food",
   },
   {
-    id:2,
+    id: 2,
     imageUrl: "/images/frame-2.png",
     description: "Dedicated to Taste",
   },
   {
-    id:3,
+    id: 3,
     imageUrl: "/images/frame-3.png",
     description: "Quality Ingredient Only",
   },
   {
-    id:4,
+    id: 4,
     imageUrl: "/images/frame-4.png",
     description: "Sweeten Wisely",
   },
 ];
-
-

@@ -12,7 +12,7 @@ function MealPlans() {
         <div className="bg-white rounded-3xl ">
           <div className="">
             <div>
-              <img src="./images/MealPlans-1.png" alt="" />
+              <img src="./images/mealPlans-1.png" alt="" />
             </div>
             <div className="text-center font-semibold text-2xl">
               <p>Keto Meal</p>
@@ -26,14 +26,14 @@ function MealPlans() {
         </div>
 
         <div>
-          <img src="./images/MealPlans-2.png" alt="" />
+          <img src="./images/mealPlans-2.png" alt="" />
         </div>
         <div>
-          <img src="./images/MealPlans-3.png" alt="" />
+          <img src="./images/mealPlans-3.png" alt="" />
         </div>
 
         <div>
-          <img src="./images/MealPlans-4.png" alt="" />
+          <img src="./images/mealPlans-4.png" alt="" />
         </div>
 
 
