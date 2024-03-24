@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className="space-y-10 w-full container px-4 lg:px-20">
-      <section className="flex justify-center lg:justify-between items-center flex-col lg:flex-row w-full">
+      <section className="flex justify-center lg:justify-between items-center flex-col lg:flex-row w-full gap-8 lg:gap-0">
         <section className="w-full lg:w-1/2">
           <div className="w-full lg:w-4/6">
             <p className="text-5xl font-bold ">
@@ -36,10 +36,10 @@ const HeroSection = () => {
               className="object-contain w-full"
             />
           </div>
-          <div className="absolute top-8 -left-20 ">
-            <div className="flex justify-center items-center bg-white border rounded-xl px-8 py-2 gap-4">
-              <div className="bg-orange-200 rounded-full px-4 py-4">
-                <div className="w-10">
+          <div className="absolute top-4 lg:top-8  -left-0 lg:-left-20 ">
+            <div className="flex justify-center items-center bg-white border rounded-xl px-4 lg:px-8 py-2 gap-4">
+              <div className="bg-orange-200 rounded-full p-3 lg:p-4">
+                <div className="w-8 lg:w-10">
                   <img
                     src="./images/heroSection-frame.png"
                     alt=""
@@ -53,10 +53,10 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-20 -right-20 ">
-            <div className="flex justify-centeritems-center bg-white border rounded-xl px-8 py-2 gap-4 ">
-              <div className="bg-orange-200 rounded-full px-4 py-4">
-                <div className="w-10">
+          <div className="absolute bottom-4 lg:bottom-20 -right-0 lg:-right-20 ">
+            <div className="flex justify-center items-center bg-white border rounded-xl px-4 lg:px-8 py-2 gap-4">
+              <div className="bg-orange-200 rounded-full p-3 lg:p-4">
+                <div className="w-8 lg:w-10">
                   <img
                     src="./images/heroSection-group.png"
                     alt=""
