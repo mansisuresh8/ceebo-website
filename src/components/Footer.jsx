@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className="flex flex-col justify-start items-center gap-8 bg-orange-200 px-4 py-8 w-full">
       <section className="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
-        <div className="w-1/2">
-          <section className="flex flex-col md:flex-row justify-center items-center">
+        <div className="w-full lg:w-1/2">
+          <section className="flex flex-col md:flex-row justify-center items-center gap-4">
             <div className="w-28 md:w-60">
               <img
                 src="./assets/logo.png"
@@ -31,7 +31,7 @@ const Footer = () => {
           </section>
         </div>
 
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <section className="flex justify-center items-center">
             <div className="space-y-2">
               <p className="font-bold text-xl">Subscribe</p>

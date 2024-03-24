@@ -9,9 +9,9 @@ import OrderNow from './OrderNow';
 function Home() {
   return (
     <div className="space-y-20">
-      <HeroSection />
+      {/* <HeroSection /> */}
       <AboutUS />
-      <MealPlans />
+      {/* <MealPlans /> */}
       <CustomerTestimonials />
       <InstagramGallery />
       <OrderNow />
