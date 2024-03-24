@@ -2,45 +2,73 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="space-y-10">
-      <section className="flex justify-between items-center py-20 px-28 Gilroy-Medium ">
-        <div className="">
-          <p className="text-5xl font-bold ">
-            <span className="text-green-400 italic font-semibold">Fresh</span>{" "}
-            Food With{" "}
-          </p>
-          <p className="text-5xl font-bold py-4">
-            Good{" "}
-            <span className="text-orange-400 italic font-semibold">Taste</span>
-          </p>
-          <p className="w-96 py-4">
-            Are you ready to transform your health and vitality one delicious
-            meal at a time? Look no further than Ceebo healthmonk – your
-            ultimate destination for nutritious, mouthwatering meals that fuel
-            your body and delight your taste buds.
-          </p>
+    <div className="space-y-10 w-full container px-4 lg:px-20">
+      <section className="flex justify-center lg:justify-between items-center flex-col lg:flex-row w-full">
+        <section className="w-full lg:w-1/2">
+          <div className="w-full lg:w-4/6">
+            <p className="text-5xl font-bold ">
+              <span className="text-green-400 italic font-semibold">
+                Fresh{" "}
+              </span>
+              Food With Good
+              <span className="text-orange-400 italic font-semibold">
+                {" "}
+                Taste
+              </span>
+            </p>
+            <p className="py-4">
+              Are you ready to transform your health and vitality one delicious
+              meal at a time? Look no further than Ceebo healthmonk – your
+              ultimate destination for nutritious, mouthwatering meals that fuel
+              your body and delight your taste buds.
+            </p>
+          </div>
+
           <div className="bg-orange-600 text-center text-white rounded-full border border-orange-6 px-4 py-4 w-60 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
             <button className="font-bold text-xl ">Order Now</button>
           </div>
-        </div>
-        <section className="bg-orange-200 w-1/2 rounded-3xl px-28 py-28">
-          <div className="flex justify-between items-center bg-white border rounded-xl px-8 py-8 ">
-            <div className="bg-orange-200 rounded-full w-20 px-4 py-4">
-              <div className="">
-                <img src="./images/heroSection-frame.png" alt="" />
+        </section>
+        <section className="bg-orange-200 w-full lg:w-1/2 rounded-3xl px-0 py-0 relative">
+          <div className="w-full ">
+            <img
+              src="/public/images/salad-bowl.png"
+              alt=""
+              className="object-contain w-full"
+            />
+          </div>
+          <div className="absolute top-8 -left-20 ">
+            <div className="flex justify-center items-center bg-white border rounded-xl px-8 py-2 gap-4">
+              <div className="bg-orange-200 rounded-full px-4 py-4">
+                <div className="w-10">
+                  <img
+                    src="./images/heroSection-frame.png"
+                    alt=""
+                    className="object-contain w-full"
+                  />
+                </div>
+              </div>
+              <div className="font-semibold">
+                <p className="text-orange-500 text-xl ">150+</p>
+                <p>Trusted Customers</p>
               </div>
             </div>
-            <div className="font-semibold">
-              <p className="text-orange-500 text-xl ">150+</p>
-              <p>Trusted Customers</p>
+          </div>
+          <div className="absolute bottom-20 -right-20 ">
+            <div className="flex justify-centeritems-center bg-white border rounded-xl px-8 py-2 gap-4 ">
+              <div className="bg-orange-200 rounded-full px-4 py-4">
+                <div className="w-10">
+                  <img
+                    src="./images/heroSection-group.png"
+                    alt=""
+                    className="object-contain w-full"
+                  />
+                </div>
+              </div>
+              <div className="font-semibold">
+                <p className="text-orange-500 text-xl ">50+</p>
+                <p>Curated Meals</p>
+              </div>
             </div>
-          </div>
-          <div className="w-full">
-            <img src="/public/images/salad-bowl.png" alt="" />
-          </div>
-          <div>
-            <p>50+</p>
-            <p>Curated Meals</p>
           </div>
         </section>
       </section>

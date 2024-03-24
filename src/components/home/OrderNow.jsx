@@ -4,9 +4,10 @@ const OrderNow = () => {
   return (
     <div className="">
       <section className="flex justify-center items-center">
-        <div className="text-5xl font-bold underline underline-offset-8 ">
-          <p>Order Now</p>
-        </div>
+      <div className="flex justify-start items-start flex-col gap-2">
+            <p className="text-3xl font-bold">Order Now</p>
+            <div className="w-3/4 h-1 bg-orange-600"></div>
+          </div>
       </section>
       <section className="flex justify-between items-center py-20">
         <div className="px-8 lg:px-20 text-2xl lg:text-5xl font-bold">
