@@ -57,7 +57,7 @@ const CustomerTestimonials = () => {
                 <div className="w-full flex justify-center items-center">
                   <div className="w-36">
                     <img
-                      src="./images/CustomerTestimonials-1.png"
+                      src="./images/customer-testimonials-1.png"
                       alt=""
                       className="object-contain w-full"
                     />
@@ -81,7 +81,7 @@ const CustomerTestimonials = () => {
                 <div className="w-full flex justify-center items-center">
                   <div className="w-36">
                     <img
-                      src="./images/CustomerTestimonials-2.png"
+                      src="./images/customer-testimonials-2.png"
                       alt=""
                       className="object-contain w-full"
                     />
@@ -105,7 +105,7 @@ const CustomerTestimonials = () => {
                 <div className="w-full flex justify-center items-center">
                   <div className="w-36">
                     <img
-                      src="./images/CustomerTestimonials-3.png"
+                      src="./images/customer-testimonials-3.png"
                       alt=""
                       className="object-contain w-full"
                     />
@@ -129,7 +129,7 @@ const CustomerTestimonials = () => {
                 <div className="w-full flex justify-center items-center">
                   <div className="w-36">
                     <img
-                      src="./images/CustomerTestimonials-1.png"
+                      src="./images/customer-testimonials-1.png"
                       alt=""
                       className="object-contain w-full"
                     />

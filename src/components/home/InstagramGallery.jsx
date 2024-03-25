@@ -16,14 +16,14 @@ const InstagramGallery = () => {
           <div>
             <div className="">
               <img
-                src="./images/InstagramGallery-1.png"
+                src="./images/instagram-gallery-1.png"
                 alt=""
                 className="object-contain w-full"
               />
             </div>
             <div className="py-4">
               <img
-                src="./images/InstagramGallery-2.png"
+                src="./images/instagram-gallery-2.png"
                 alt=""
                 className="object-contain w-full"
               />
@@ -34,21 +34,21 @@ const InstagramGallery = () => {
           <div>
             <div>
               <img
-                src="./images/InstagramGallery-3.png"
+                src="./images/instagram-gallery-3.png"
                 alt=""
                 className="object-contain w-full"
               />
             </div>
             <div className="py-6">
               <img
-                src="./images/InstagramGallery-4.png"
+                src="./images/instagram-gallery-4.png"
                 alt=""
                 className="object-contain w-full"
               />
             </div>
             <div className="py-6">
               <img
-                src="./images/InstagramGallery-5.png"
+                src="./images/instagram-gallery-5.png"
                 alt=""
                 className="object-contain w-full"
               />
@@ -58,10 +58,10 @@ const InstagramGallery = () => {
         <section className="py-4 px-2">
           <div>
             <div>
-              <img src="./images/InstagramGallery-6.png" alt="" />
+              <img src="./images/instagram-gallery-6.png" alt="" />
             </div>
             <div className="py-4">
-              <img src="./images/InstagramGallery-7.png" alt="" />
+              <img src="./images/instagram-gallery-7.png" alt="" />
             </div>
           </div>
         </section>

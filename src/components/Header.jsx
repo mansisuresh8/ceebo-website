@@ -8,7 +8,7 @@ function Header() {
    <div className="flex justify-between items-center py-4 text-black w-full px-4 md:px-20 cursor-pointer">
     <section className="flex justify-start items-center gap-4">
         <div className="w-10 md:w-16"> 
-            <img src="./assets/logo.png" alt="" className="rounded-full object-contain w-full"/>
+            <img src="./ceebo-website/images/logo.png" alt="" className="rounded-full object-contain w-full"/>
         </div>
     </section>
     <section className="flex justify-center items-center gap-4 cursor-pointer">

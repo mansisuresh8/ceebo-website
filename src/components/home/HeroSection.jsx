@@ -31,7 +31,7 @@ const HeroSection = () => {
         <section className="bg-orange-200 w-full lg:w-1/2 rounded-3xl px-0 py-0 relative">
           <div className="w-full ">
             <img
-              src="/public/images/salad-bowl.png"
+              src="./ceebo-website/images/salad-bowl.png"
               alt=""
               className="object-contain w-full"
             />
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <div className="bg-orange-200 rounded-full p-3 lg:p-4">
                 <div className="w-8 lg:w-10">
                   <img
-                    src="./images/heroSection-frame.png"
+                    src="./ceebo-website/images/hero-section-frame.png"
                     alt=""
                     className="object-contain w-full"
                   />
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <div className="bg-orange-200 rounded-full p-3 lg:p-4">
                 <div className="w-8 lg:w-10">
                   <img
-                    src="./images/heroSection-group.png"
+                    src="./ceebo-website/images/hero-section-group.png"
                     alt=""
                     className="object-contain w-full"
                   />

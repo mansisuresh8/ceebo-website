@@ -30,16 +30,16 @@ const OrderNow = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 w-full cursor-pointer">
             <div className=" w-full">
               <img
-                src="./images/OrderNow-1.png"
+                src="./images/order-now-1.png"
                 alt=""
                 className="object-contain w-full"
               />
             </div>
             <div className=" w-full">
               <img
-                src="./images/OrderNow-2.png"
+                src="./images/order-now-2.png"
                 alt=""
-                className="object-contain w-full"
+                className="object-contain w-full" 
               />
             </div>
           </div>
@@ -47,13 +47,12 @@ const OrderNow = () => {
         <section className="w-full">
           <div className="">
             <img
-              src="./images/OrderNow.png"
+              src="./images/order-now-3.png"
               alt=""
               className="object-contain w-full"
             />
           </div>
         </section>
-        ` `
       </section>
     </div>
   );
