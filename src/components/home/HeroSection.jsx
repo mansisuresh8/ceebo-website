@@ -31,7 +31,7 @@ const HeroSection = () => {
         <section className="bg-orange-200 w-full lg:w-1/2 rounded-3xl px-0 py-0 relative">
           <div className="w-full ">
             <img
-              src="./ceebo-website/images/salad-bowl.png"
+              src="./images/salad-bowl.png"
               alt=""
               className="object-contain w-full"
             />
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <div className="bg-orange-200 rounded-full p-3 lg:p-4">
                 <div className="w-8 lg:w-10">
                   <img
-                    src="./ceebo-website/images/hero-section-frame.png"
+                    src="./images/hero-section-frame.png"
                     alt=""
                     className="object-contain w-full"
                   />
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <div className="bg-orange-200 rounded-full p-3 lg:p-4">
                 <div className="w-8 lg:w-10">
                   <img
-                    src="./ceebo-website/images/hero-section-group.png"
+                    src="./images/hero-section-group.png"
                     alt=""
                     className="object-contain w-full"
                   />
@@ -133,22 +133,22 @@ const BottomHeroSection = () => {
 const data = [
   {
     id: 1,
-    imageUrl: "/images/frame-1.png",
+    imageUrl: "./images/frame-1.png",
     description: "Freshly Prepared Food",
   },
   {
     id: 2,
-    imageUrl: "/images/frame-2.png",
+    imageUrl: "./images/frame-2.png",
     description: "Dedicated to Taste",
   },
   {
     id: 3,
-    imageUrl: "/images/frame-3.png",
+    imageUrl: "./images/frame-3.png",
     description: "Quality Ingredient Only",
   },
   {
     id: 4,
-    imageUrl: "/images/frame-4.png",
+    imageUrl: "./images/frame-4.png",
     description: "Sweeten Wisely",
   },
 ];
