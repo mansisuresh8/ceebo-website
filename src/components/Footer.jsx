@@ -7,7 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-start items-center gap-8 bg-orange-200 px-4 py-8 w-full">
+    <footer className="flex flex-col justify-start items-center gap-8 bg-orange-200 px-4 lg:px-16 py-8 w-full cursor-pointer">
       <section className="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
         <div className="w-full lg:w-1/2">
           <section className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -33,7 +33,7 @@ const Footer = () => {
 
         <div className="w-full lg:w-1/2">
           <section className="flex justify-center items-center">
-            <div className="space-y-2">
+            <div className="space-y-2 ">
               <p className="font-bold text-xl">Subscribe</p>
               <div className="flex justify-center items-center gap-4">
                 <input
@@ -41,7 +41,7 @@ const Footer = () => {
                   placeholder="Enter your email"
                   className="w-40 md:w-full px-4 size-10"
                 />
-                <button className="bg-orange-600 text-white rounded-full border border-orange-6 px-4 py-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300font-bold text-xl">
+                <button className="bg-[#FF9426] text-white rounded-full border border-orange-6 px-4 py-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300font-bold text-xl">
                   Subsribe
                 </button>
               </div>

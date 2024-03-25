@@ -28,17 +28,17 @@ const CustomerTestimonials = () => {
       <section className="flex justify-center items-center flex-col lg:flex-row">
         <div className="flex justify-start items-start flex-col gap-2">
           <p className="text-3xl font-bold">Customer Testimonials</p>
-          <div className="w-3/4 h-1 bg-orange-600"></div>
+          <div className="w-3/4 h-1 bg-[#FF9426]"></div>
         </div>
       </section>
 
       <div className="py-16">
-        <section>
+        <section className="cursor-pointer">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
             pagination={true}
-            modules={[Autoplay,Pagination]}
+            modules={[Autoplay, Pagination]}
             loop={true}
             autoplay={{ delay: 3000 }}
             breakpoints={{
@@ -64,11 +64,102 @@ const CustomerTestimonials = () => {
                   <p className="py-4">
                     “Ceebo Healthmonk has simplified my life by delivering
                     nutritious meals to my doorstep, saving me time and effort.”
+                    Thank you, Ceebo Healthmonk, for simplifying my life!"
                   </p>
                 </div>
-                {/* <div>
-              <img src="./images/star-1.png" alt="" />
-            </div> */}
+                <div className="flex justify-center items-center gap-1">
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-white rounded-3xl px-8 py-8 items-center">
+                <div className="w-full flex justify-center items-center">
+                  <div className="w-36">
+                    <img
+                      src="./images/CustomerTestimonials-2.png"
+                      alt=""
+                      className="object-contain w-full"
+                    />
+                  </div>
+                </div>
+                <div className="text-center py-8">
+                  <p className="font-semibold text-lg">Harsh Mehta</p>
+                  <p className="py-4">
+                    It's incredible how they've managed to strike the perfect
+                    balance between health and taste. Thanks to them, eating
+                    well has never been easier or more enjoyable!"
+                  </p>
+                </div>
+                <div className="flex justify-center items-center gap-1">
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-white rounded-3xl px-8 py-8 items-center">
+                <div className="w-full flex justify-center items-center">
+                  <div className="w-36">
+                    <img
+                      src="./images/CustomerTestimonials-3.png"
+                      alt=""
+                      className="object-contain w-full"
+                    />
+                  </div>
+                </div>
+                <div className="text-center py-8">
+                  <p className="font-semibold text-lg">Shrushti Nanda</p>
+                  <p className="py-4">
+                    "Ceebo Healthmonk has exceeded my expectations in every way.
+                    From the freshness of ingredients to the variety of flavors,
+                    each meal is a delightful experience.
+                  </p>
+                </div>
+                <div className="flex justify-center items-center gap-1">
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-5.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-5.png" alt="" />
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -83,61 +174,30 @@ const CustomerTestimonials = () => {
                   </div>
                 </div>
                 <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Anita Sandhvi</p>
+                  <p className="font-semibold text-lg">Mili Thakur</p>
                   <p className="py-4">
-                    “Ceebo Healthmonk has simplified my life by delivering
-                    nutritious meals to my doorstep, saving me time and effort.”
+                    Their convenient delivery service brings delicious and
+                    nutritious meals right to my doorstep. Thank you, Ceebo
+                    Healthmonk, for simplifying my life!"
                   </p>
                 </div>
-                {/* <div>
-              <img src="./images/star-1.png" alt="" />
-            </div> */}
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/CustomerTestimonials-1.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
+                <div className="flex justify-center items-center gap-1">
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-1.png" alt="" />
+                  </div>
+                  <div className="w-8">
+                    <img src="./images/star-5.png" alt="" />
                   </div>
                 </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Anita Sandhvi</p>
-                  <p className="py-4">
-                    “Ceebo Healthmonk has simplified my life by delivering
-                    nutritious meals to my doorstep, saving me time and effort.”
-                  </p>
-                </div>
-                {/* <div>
-              <img src="./images/star-1.png" alt="" />
-            </div> */}
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/CustomerTestimonials-1.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Anita Sandhvi</p>
-                  <p className="py-4">
-                    “Ceebo Healthmonk has simplified my life by delivering
-                    nutritious meals to my doorstep, saving me time and effort.”
-                  </p>
-                </div>
-                {/* <div>
-              <img src="./images/star-1.png" alt="" />
-            </div> */}
               </div>
             </SwiperSlide>
           </Swiper>

@@ -23,7 +23,7 @@ function Header() {
         </div>
     </section>
     <section className="hidden md:block">
-      <div className="bg-orange-600 text-white rounded-full border border-orange-6 px-4 py-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+      <div className="bg-[#FF9426] text-white rounded-full border border-orange-6 px-4 py-1 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
       <button className="font-bold">Order Now</button>
       </div>
     </section>

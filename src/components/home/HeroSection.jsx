@@ -24,7 +24,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <div className="bg-orange-600 text-center text-white rounded-full border border-orange-6 px-4 py-4 w-60 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+          <div className="bg-[#FF9426] text-center text-white rounded-full border border-orange-6 px-4 py-4 w-60 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
             <button className="font-bold text-xl ">Order Now</button>
           </div>
         </section>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="font-semibold">
-                <p className="text-orange-500 text-xl ">150+</p>
+                <p className="text-[#FF9426] text-3xl ">150+</p>
                 <p>Trusted Customers</p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="font-semibold">
-                <p className="text-orange-500 text-xl ">50+</p>
+                <p className="text-[#FF9426] text-3xl ">50+</p>
                 <p>Curated Meals</p>
               </div>
             </div>

@@ -32,7 +32,7 @@ const AboutUS = () => {
         <div className="w-full h-full flex justify-center items-start flex-col">
           <div className="flex justify-start items-start flex-col gap-2">
             <p className="text-3xl font-bold">About Us</p>
-            <div className="w-3/4 h-1 bg-orange-600"></div>
+            <div className="w-3/4 h-1 bg-[#FF9426]"></div>
           </div>
           <div className="px-4 py-4">
             <p>
@@ -49,7 +49,7 @@ const AboutUS = () => {
           </div>
 
           <section className="py-16">
-            <div className="bg-orange-600 text-center text-white rounded-full border border-orange-6 px-4 py-4 w-60 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+            <div className="bg-[#FF9426] text-center text-white rounded-full border border-orange-6 px-4 py-4 w-60 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
               <button className="font-bold text-xl ">Know More</button>
             </div>
           </section>
