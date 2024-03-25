@@ -52,114 +52,35 @@ function MealPlans() {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="relative group cursor-pointer">
-                <div className="absolute w-full -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-full ">
-                    <img
-                      src="./images/mealPlans-1.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="bg-white rounded-3xl pt-60 lg:pt-96 group-hover:bg-[#FF9426]">
-                  <div className="px-8 py-8">
-                    <div className="text-center ">
-                      <p className="font-bold text-3xl">Keto Meal</p>
+            {slidesData.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative group cursor-pointer pt-40 ">
+                  <div className="absolute w-full -top-20 left-1/2 transform -translate-x-1/2 pt-14">
+                    <div className="w-full">
+                      <img
+                        src={slide.imgSrc}
+                        alt=""
+                        className="object-contain w-full"
+                      />
                     </div>
-                    <div className="mt-16 px-8 lg:px-24 py-4">
-                      <div className="bg-[#FF9426] group-hover:bg-white  text-center text-white group-hover:text-black rounded-full px-4 py-4 w-60 ease-in-out transition-all hover:-translate-y-1 hover:scale-110 duration-300">
-                        <button className="font-bold text-xl ">
-                          Order Now
-                        </button>
+                  </div>
+                  <div className="bg-white rounded-3xl pt-40 lg:pt-60 group-hover:bg-[#FF9426]">
+                    <div className="px-8 py-8">
+                      <div className="text-center">
+                        <p className="font-bold text-3xl">{slide.title}</p>
+                      </div>
+                      <div className="mt-16 px-8 lg:px-24 py-4">
+                        <div className="bg-[#FF9426] group-hover:bg-white  text-center text-white group-hover:text-black rounded-full px-4 py-4 w-60 ease-in-out transition-all hover:-translate-y-1 hover:scale-110 duration-300">
+                          <button className="font-bold text-xl">
+                            Order Now
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative group cursor-pointer">
-                <div className="absolute w-full -top-12 lg:-top-16 left-1/2 transform -translate-x-1/2">
-                  <div className="w-full ">
-                    <img
-                      src="./images/mealPlans-2.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="bg-white rounded-3xl pt-60 lg:pt-96 group-hover:bg-[#FF9426]">
-                  <div className="px-8 py-8">
-                    <div className="text-center ">
-                      <p className="font-bold text-3xl">Fresh Salads</p>
-                    </div>
-                    <div className="mt-16 px-8 lg:px-24 py-4">
-                      <div className="bg-[#FF9426] group-hover:bg-white  text-center text-white group-hover:text-black rounded-full px-4 py-4 w-60 ease-in-out transition-all hover:-translate-y-1 hover:scale-110 duration-300">
-                        <button className="font-bold text-xl ">
-                          Order Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative group cursor-pointer">
-                <div className="absolute w-full -top-20 lg:-top-28 left-1/2 transform -translate-x-1/2">
-                  <div className="w-full ">
-                    <img
-                      src="./images/mealPlans-3.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="bg-white rounded-3xl pt-60 lg:pt-96 group-hover:bg-[#FF9426]">
-                  <div className="px-8 py-8">
-                    <div className="text-center ">
-                      <p className="font-bold text-3xl">High Protein Meals</p>
-                    </div>
-                    <div className="mt-16 px-8 lg:px-24 py-4">
-                      <div className="bg-[#FF9426] group-hover:bg-white  text-center text-white group-hover:text-black rounded-full px-4 py-4 w-60 ease-in-out transition-all hover:-translate-y-1 hover:scale-110 duration-300">
-                        <button className="font-bold text-xl ">
-                          Order Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative group cursor-pointer">
-                <div className="absolute w-full -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="w-full ">
-                    <img
-                      src="./images/mealPlans-4.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="bg-white rounded-3xl pt-60 lg:pt-96 group-hover:bg-[#FF9426]">
-                  <div className="px-8 py-8">
-                    <div className="text-center ">
-                      <p className="font-bold text-3xl">Guilt Free Deserts</p>
-                    </div>
-                    <div className="mt-16 px-8 lg:px-24 py-4">
-                      <div className="bg-[#FF9426] group-hover:bg-white  text-center text-white group-hover:text-black rounded-full px-4 py-4 w-60 ease-in-out transition-all hover:-translate-y-1 hover:scale-110 duration-300">
-                        <button className="font-bold text-xl ">
-                          Order Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </section>
       </div>
@@ -174,3 +95,30 @@ function MealPlans() {
 }
 
 export default MealPlans;
+
+const slidesData = [
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "Fresh Salads",
+  },
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "High Protein Meals",
+  },
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "Guilt Free Deserts",
+  },
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "Fresh Salads",
+  },
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "High Protein Meals",
+  },
+  {
+    imgSrc: "./images/mealPlans-2.png",
+    title: "Guilt Free Deserts",
+  },
+];
