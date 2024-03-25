@@ -8,6 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
 
+import StarRating from "../StarRating";
+
 const CustomerTestimonials = () => {
   const congfig = {
     slidesPerView: 1,
@@ -28,7 +30,9 @@ const CustomerTestimonials = () => {
       <section className="flex justify-center items-center flex-col lg:flex-row">
         <div className="flex justify-start items-start flex-col gap-2">
           <p className="text-3xl font-bold">Customer Testimonials</p>
-          <div className="w-3/4 h-1 bg-[#FF9426]"></div>
+          <div className="flex justify-center items-center w-full">
+            <div className="w-3/4 h-1 bg-[#FF9426]"></div>
+          </div>
         </div>
       </section>
 
@@ -67,22 +71,8 @@ const CustomerTestimonials = () => {
                     Thank you, Ceebo Healthmonk, for simplifying my life!"
                   </p>
                 </div>
-                <div className="flex justify-center items-center gap-1">
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
+                <div className="flex justify-center items-center w-full">
+                  <StarRating rating={3.3} />
                 </div>
               </div>
             </SwiperSlide>
@@ -105,22 +95,8 @@ const CustomerTestimonials = () => {
                     well has never been easier or more enjoyable!"
                   </p>
                 </div>
-                <div className="flex justify-center items-center gap-1">
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-5.png" alt="" />
-                  </div>
+                <div className="flex justify-center items-center w-full">
+                  <StarRating rating={5.0} />
                 </div>
               </div>
             </SwiperSlide>
@@ -143,22 +119,8 @@ const CustomerTestimonials = () => {
                     each meal is a delightful experience.
                   </p>
                 </div>
-                <div className="flex justify-center items-center gap-1">
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-5.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-5.png" alt="" />
-                  </div>
+                <div className="flex justify-center items-center w-full">
+                  <StarRating rating={3.3} />
                 </div>
               </div>
             </SwiperSlide>
@@ -181,22 +143,8 @@ const CustomerTestimonials = () => {
                     Healthmonk, for simplifying my life!"
                   </p>
                 </div>
-                <div className="flex justify-center items-center gap-1">
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-1.png" alt="" />
-                  </div>
-                  <div className="w-8">
-                    <img src="./images/star-5.png" alt="" />
-                  </div>
+                <div className="flex justify-center items-center w-full">
+                  <StarRating rating={4.3} />
                 </div>
               </div>
             </SwiperSlide>

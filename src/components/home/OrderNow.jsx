@@ -6,7 +6,9 @@ const OrderNow = () => {
       <section className="flex justify-center items-center">
         <div className="flex justify-start items-start flex-col gap-2">
           <p className="text-3xl font-bold">Order Now</p>
-          <div className="w-3/4 h-1 bg-[#FF9426]"></div>
+          <div className="flex justify-center items-center w-full">
+            <div className="w-3/4 h-1 bg-[#FF9426]"></div>
+          </div>
         </div>
       </section>
 
