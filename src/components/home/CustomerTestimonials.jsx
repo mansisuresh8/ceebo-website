@@ -48,106 +48,32 @@ const CustomerTestimonials = () => {
             breakpoints={{
               950: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 40,
               },
             }}
           >
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/customer-testimonials-1.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
+            {testimonialsData.map((testimonial, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex justify-center items-center flex-col bg-white rounded-3xl px-8 py-8 h-full">
+                  <div className="w-full flex justify-center items-center h-full">
+                    <div className="w-36">
+                      <img
+                        src={testimonial.imgSrc}
+                        alt=""
+                        className="object-contain w-full"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center py-8">
+                    <p className="font-semibold text-lg">{testimonial.name}</p>
+                    <p className="py-4">{testimonial.content}</p>
+                  </div>
+                  <div className="flex justify-center items-center w-full">
+                    <StarRating rating={testimonial.rating} />
                   </div>
                 </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Anita Sandhvi</p>
-                  <p className="py-4">
-                    “Ceebo Healthmonk has simplified my life by delivering
-                    nutritious meals to my doorstep, saving me time and effort.”
-                    Thank you, Ceebo Healthmonk, for simplifying my life!"
-                  </p>
-                </div>
-                <div className="flex justify-center items-center w-full">
-                  <StarRating rating={3.3} />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/customer-testimonials-2.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Harsh Mehta</p>
-                  <p className="py-4">
-                    It's incredible how they've managed to strike the perfect
-                    balance between health and taste. Thanks to them, eating
-                    well has never been easier or more enjoyable!"
-                  </p>
-                </div>
-                <div className="flex justify-center items-center w-full">
-                  <StarRating rating={5.0} />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/customer-testimonials-3.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Shrushti Nanda</p>
-                  <p className="py-4">
-                    "Ceebo Healthmonk has exceeded my expectations in every way.
-                    From the freshness of ingredients to the variety of flavors,
-                    each meal is a delightful experience.
-                  </p>
-                </div>
-                <div className="flex justify-center items-center w-full">
-                  <StarRating rating={3.3} />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-white rounded-3xl px-8 py-8 items-center">
-                <div className="w-full flex justify-center items-center">
-                  <div className="w-36">
-                    <img
-                      src="./images/customer-testimonials-1.png"
-                      alt=""
-                      className="object-contain w-full"
-                    />
-                  </div>
-                </div>
-                <div className="text-center py-8">
-                  <p className="font-semibold text-lg">Mili Thakur</p>
-                  <p className="py-4">
-                    Their convenient delivery service brings delicious and
-                    nutritious meals right to my doorstep. Thank you, Ceebo
-                    Healthmonk, for simplifying my life!"
-                  </p>
-                </div>
-                <div className="flex justify-center items-center w-full">
-                  <StarRating rating={4.3} />
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </section>
       </div>
@@ -156,3 +82,34 @@ const CustomerTestimonials = () => {
 };
 
 export default CustomerTestimonials;
+
+const testimonialsData = [
+  {
+    imgSrc: "./images/customer-testimonials-1.png",
+    name: "Anita Sandhvi",
+    rating: 3.3,
+    content:
+      "Ceebo Healthmonk has simplified my life by delivering nutritious meals to my doorstep, saving me time and effort. Thank you, Ceebo Healthmonk, for simplifying my life!",
+  },
+  {
+    imgSrc: "./images/customer-testimonials-2.png",
+    name: "Harsh Mehta",
+    rating: 5.0,
+    content:
+      "It's incredible how they've managed to strike the perfect balance between health and taste. Thanks to them, eating well has never been easier or more enjoyable!",
+  },
+  {
+    imgSrc: "./images/customer-testimonials-3.png",
+    name: "Shrushti Nanda",
+    rating: 2.3,
+    content:
+      "Ceebo Healthmonk has exceeded my expectations in every way. From the freshness of ingredients to the variety of flavors, each meal is a delightful experience.",
+  },
+  {
+    imgSrc: "./images/customer-testimonials-1.png",
+    name: "Mili Thakur",
+    rating: 4.3,
+    content:
+      "Their convenient delivery service brings delicious and nutritious meals right to my doorstep. Thank you, Ceebo Healthmonk, for simplifying my life!",
+  },
+];
