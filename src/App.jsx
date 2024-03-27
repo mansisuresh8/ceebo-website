@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="bg-[#FFEFE0]">
       <Header />
+      <div className="h-20 lg:h-28 w-full"></div>
       <Home />
       <Footer />
     </div>
