@@ -85,28 +85,28 @@ export default CustomerTestimonials;
 
 const testimonialsData = [
   {
-    imgSrc: "./images/customer-testimonials-1.png",
+    imgSrc: "./images/customer-testimonials-1.webp",
     name: "Anita Sandhvi",
     rating: 3.3,
     content:
       "Ceebo Healthmonk has simplified my life by delivering nutritious meals to my doorstep, saving me time and effort. Thank you, Ceebo Healthmonk, for simplifying my life!",
   },
   {
-    imgSrc: "./images/customer-testimonials-2.png",
+    imgSrc: "./images/customer-testimonials-2.webp",
     name: "Harsh Mehta",
     rating: 5.0,
     content:
       "It's incredible how they've managed to strike the perfect balance between health and taste. Thanks to them, eating well has never been easier or more enjoyable!",
   },
   {
-    imgSrc: "./images/customer-testimonials-3.png",
+    imgSrc: "./images/customer-testimonials-3.webp",
     name: "Shrushti Nanda",
     rating: 2.3,
     content:
       "Ceebo Healthmonk has exceeded my expectations in every way. From the freshness of ingredients to the variety of flavors, each meal is a delightful experience.",
   },
   {
-    imgSrc: "./images/customer-testimonials-1.png",
+    imgSrc: "./images/customer-testimonials-1.webp",
     name: "Mili Thakur",
     rating: 4.3,
     content:

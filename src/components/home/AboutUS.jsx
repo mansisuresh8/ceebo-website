@@ -8,7 +8,7 @@ const AboutUS = () => {
         <div className="w-full lg:col-span-2 flex justify-center items-center">
           <div className="w-full">
             <img
-              src="./images/aboutImage-1.png"
+              src="./images/aboutImage-1.webp"
               alt=""
               className="object-contain w-full"
             />
@@ -16,14 +16,14 @@ const AboutUS = () => {
           <div className="w-2/3">
             <div className="w-full">
               <img
-                src="./images/aboutImage-2.png"
+                src="./images/aboutImage-2.webp"
                 alt=""
                 className="object-contain w-full"
               />
             </div>
             <div className="w-full">
               <img
-                src="./images/aboutImage-3.png"
+                src="./images/aboutImage-3.webp"
                 alt=""
                 className="object-contain w-full"
               />

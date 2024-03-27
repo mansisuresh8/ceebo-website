@@ -98,27 +98,27 @@ export default MealPlans;
 
 const slidesData = [
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "Fresh Salads",
   },
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "High Protein Meals",
   },
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "Guilt Free Deserts",
   },
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "Fresh Salads",
   },
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "High Protein Meals",
   },
   {
-    imgSrc: "./images/mealPlans-2.png",
+    imgSrc: "./images/mealPlans-2.webp",
     title: "Guilt Free Deserts",
   },
 ];

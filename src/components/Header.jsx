@@ -12,7 +12,7 @@ function Header() {
         <section className="flex justify-start items-center gap-4">
           <div className="w-10 lg:w-16">
             <img
-              src="./images/logo.png"
+              src="./images/logo.webp"
               alt=""
               className="rounded-full object-contain w-full"
             />
