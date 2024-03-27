@@ -74,7 +74,7 @@ const HeroSection = () => {
           </section>
         </section>
 
-        <section>
+        <section className="pt-6 lg:pt-12 ">
           <BottomHeroSection />
         </section>
       </div>
@@ -95,15 +95,15 @@ export default HeroSection;
 const BottomHeroSection = () => {
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="flex justify-center items-center gap-4  w-5/6 bg-white shadow-lg rounded-3xl py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 w-full">
+      <div className="flex justify-center items-center gap-4 w-full lg:w-5/6 bg-white shadow-lg rounded-3xl py-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           {data.map((item) => (
             <div
               key={item.id}
               className={`flex justify-center items-center w-full `}
             >
               <div className="flex justify-center items-center flex-col gap-4">
-                <div className="w-32">
+                <div className="w-20 2xl:28">
                   <img
                     src={item.imageUrl}
                     alt={item.description}
