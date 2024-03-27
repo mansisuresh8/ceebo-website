@@ -2,7 +2,8 @@ import React from "react";
 
 const AboutUS = () => {
   return (
-    <div className="flex justify-between items-center container px-4 lg:px-20 ">
+    <div className="flex justify-center items-center w-full">
+      <div className="flex justify-between items-center container px-4 lg:px-20 ">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className="w-full lg:col-span-2 flex justify-center items-center">
           <div className="w-full">
@@ -55,6 +56,7 @@ const AboutUS = () => {
           </section>
         </div>
       </section>
+    </div>
     </div>
   );
 };
